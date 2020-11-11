@@ -8,7 +8,7 @@ Stampare a schermo la bici con peso minore.
 $(document).ready( function() {
 
   // Array di oggetti bicycle
-  var bicycles = [
+  const bicycles = [
     {
       'nome':'merida',
       'peso': 10
@@ -24,15 +24,13 @@ $(document).ready( function() {
   ];
 
   // Ordina l'array in base alla proprietà peso dell'oggetto bicycle, in modo crescente.
-  var bicyclesOrder = bicycles.sort(function(a, b) {
-    return a.peso - b.peso;
-  })
+  let bicyclesOrder = bicycles.sort((a, b) => a.peso - b.peso);
   console.log(bicyclesOrder);
 
   // Stampa a schermo il primo elemento dell'array di oggetti bicycle, con peso minore rispetto agli altri
-  for (var i = 0; i < 1; i++) {
-    for (var key in bicycles[0]) {
-      $('body').append('<h1>' + key + ': ' + bicycles[i][key] + '</h1>');
+  for (let i = 0; i < 1; i++) {
+    for (let key in bicycles[0]) {
+      $('body').append(`<h1> ${key}: ${bicycles[i][key]} </h1>`);
     }
   }
 })

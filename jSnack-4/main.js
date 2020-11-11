@@ -13,7 +13,7 @@ punti fatti e falli subiti
 $(document).ready( function() {
 
   // Array di oggetti team
-  var teams = [
+  const teams = [
     {
       'nome': "Napoli",
       'punti': 0,
@@ -38,7 +38,7 @@ $(document).ready( function() {
 
   /*Generazione numeri random per le proprietà "punti" e "falli subiti"
   degli oggetti team*/
-  for (var i = 0; i < teams.length; i++){
+  for (let i = 0; i < teams.length; i++){
     teams[i].punti = Math.floor(Math.random() * 30);
     teams[i]['falliSubiti'] = Math.floor(Math.random() * 35);
   }

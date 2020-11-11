@@ -11,7 +11,7 @@ modificare il peso della palla.
 $(document).ready( function() {
 
   // Creazione dell'oggetto ball
-  var ball = {
+  const ball = {
     'nome': 'palla',
     'peso': 10
   };

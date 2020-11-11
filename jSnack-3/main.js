@@ -9,20 +9,20 @@ Calcolare perimetro e area.
 $(document).ready( function() {
 
   // Creazione oggetto triangle
-  var triangle = {
+  const triangle = {
     'base': 10,
     'altezza': 25
   };
   console.log(triangle);
 
   // Calcolo ipotenusa
-  var ipotenusa = Math.sqrt(triangle.base ** 2 + triangle.altezza ** 2 );
+  let ipotenusa = Math.sqrt(triangle.base ** 2 + triangle.altezza ** 2 );
   console.log("ipotenusa:", ipotenusa);
   // Calcolo perimetro
-  var perimetro = triangle.base + triangle.altezza + ipotenusa;
+  let perimetro = triangle.base + triangle.altezza + ipotenusa;
   console.log("perimetro:", perimetro);
   // Calcolo area
-  var area = (triangle.base * triangle.altezza) / 2;
+  let area = (triangle.base * triangle.altezza) / 2;
   console.log("area:", area);
 
 })

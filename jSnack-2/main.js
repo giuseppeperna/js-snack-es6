@@ -30,8 +30,9 @@ $(document).ready( function() {
 
   // Stampa a schermo il primo elemento dell'array di oggetti bicycle, con peso minore rispetto agli altri
   const [lightBicycle] = bicycles;
-  console.log(lightBicycle);
-  for (let key in lightBicycle) {
-      $('body').append(`<h1> ${key}: ${lightBicycle[key]} </h1>`);
-    }
+  const {nome, peso} = lightBicycle;
+  console.log(nome, peso);
+  $('body').append(`<h1> Nome: ${nome} </h1>`);
+  $('body').append(`<h1> Peso: ${peso} </h1>`);
+
 })

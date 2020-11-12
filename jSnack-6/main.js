@@ -23,11 +23,9 @@ $(document).ready( function() {
 
   /*Crea un nuovo array clone del precedente ed aggiunge ad ogni oggetto
   la proprietà position, il cui valore è una lettera casuale dell'alfabeto*/
-  const arrayObjMod = arrayObj.map(element => ({...element}));
-  for (let key in arrayObjMod) {
-      let randomChar = ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
-      arrayObjMod[key].position = randomChar;
-    }
+  // const arrayObjMod = arrayObj.map(element => ({...element}));
+  const arrayObjMod = arrayObj.map(element => ({...element, position:ALPHABET[Math.floor(Math.random() * ALPHABET.length)]}));
+
   console.log(arrayObjMod);
 
 })

@@ -14,7 +14,7 @@ $(document).ready( function() {
   console.log(names);
 
   // Chiede all'utente di inserire due numeri compresi tra lo 0 e la length dell'array names
-  let pickNumber = []
+  const pickNumber = []
   for (let i = 0; i < 2; i++){
     let askNumbers = parseInt(prompt(`Scegli un numero tra 0 e ${names.length}`));
     pickNumber.push(askNumbers)

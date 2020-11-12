@@ -24,9 +24,7 @@ $(document).ready( function() {
   /*Filtra l'array names per creare un secondo array, prendendone gli elementi
   che si trovano nella posizione compresa tra i due numeri inseriti dall'utente*/
   const chosenNames = names.filter((element, index) => {
-    if((index >= pickNumber[0]) && (index <= pickNumber[1])) {
-      return element
-    }
+      return index >= pickNumber[0] && index <= pickNumber[1]
   })
   console.log(chosenNames);
 
